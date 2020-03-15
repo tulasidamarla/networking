@@ -12,6 +12,8 @@ While early routers provided several Ethernet ports for wired connections, most 
 Modem
 
 1)A modem is a device that provides access to the Internet (see below).<br>
+![Modem](modem.png)
+
 2)The modem connects to your ISP, which typically provides either cable or DSL Internet service.<br>
 	a) Cable modems have a coaxial (or "coax") connection, which is the same type of connector found on a TV or cable box. This connects to a cable port on the wall.<br>
 	b) DSL modems have a telephone connector, also called an RJ-11 jack, which connects to a telephone socket on the wall.<br>
