@@ -10,14 +10,14 @@ While early routers provided several Ethernet ports for wired connections, most 
 
 2)While connecting to a router provides access to a local network (LAN), it does not necessarily provide access to the Internet. In order for devices on the network to connect to the Internet, the router must be connected to a modem. Therefore, most routers have a specific Ethernet port that is designed to connect to the Ethernet port of a cable or DSLmodem.
 
-Modem
+Modem(Modulator/Demodulator)
 
 1)A modem is a device that provides access to the Internet (see below).<br>
 ![Modem](modem.png)
 
 2)The modem connects to your ISP, which typically provides either cable or DSL Internet service.<br>
 	a) Cable modems have a coaxial (or "coax") connection, which is the same type of connector found on a TV or cable box. This connects to a cable port on the wall.<br>
-	b) DSL modems have a telephone connector, also called an RJ-11 jack, which connects to a telephone socket on the wall.<br>
+	b) DSL(Digital Subscriber line) modems have a telephone connector, also called an RJ-11 jack, which connects to a telephone socket on the wall.<br>
 3)By connecting your modem to your router (instead of directly to a computer), all devices connected to the router can access the modem, and therefore, the Internet.<br>
 4)The router provides a local IP address to each connected device, but they will all have the same external IP address, which is assigned by your ISP.
 
