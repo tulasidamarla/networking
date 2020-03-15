@@ -3,7 +3,7 @@ Router
 ------
 1)A router is a small box that joins two or more networks like the internet and a local network (see below).
 
-		![router](router.png)
+![router](router.png)
 	
 While early routers provided several Ethernet ports for wired connections, most modern routers offer wirelessconnectivity as well. These "wireless routers" often have one or two moveable antennas on the sides, though some models house the antennas inside the enclosure. Wireless routers allow multiple computers and other devices, such as smartphone and tablets, to join the same network.
 
