@@ -10,8 +10,25 @@ While early routers provided several Ethernet ports for wired connections, most 
 
 2)While connecting to a router provides access to a local network (LAN), it does not necessarily provide access to the Internet. In order for devices on the network to connect to the Internet, the router must be connected to a modem. Therefore, most routers have a specific Ethernet port that is designed to connect to the Ethernet port of a cable or DSLmodem.
 
-Modem(Modulator/Demodulator)
+Types of Routers
+----------------
 
+Broadband router
+----------------
+If you are using Voice over IP (VoIP) technology, then you will need a broadband router to connect your Internet to your phone. These are often a special type of modem that will have both Ethernet and phone jacks.
+
+Wireless Routers
+-----------------
+Wireless routers connect to your modem and create a wireless signal in your home or office. So, any computer within range can connect to your wireless router and use your broadband Internet for free. The only way to keep anyone from connecting to your system is to secure your router.
+
+Securing router
+---------------
+A word of warning about wireless routers: Be sure your secure them, or you will be susceptible to hackers and identity thieves. In order to secure your router, you simply need to come to WhatIsMyIPAddress.com, and get your IP address. Then, you'll type that into your web browser and log into your router (the user ID and password will come with your router).
+
+Remember to change the router ID and password as well or someone else might lock you out of your system.
+
+Modem(Modulator/Demodulator)
+----------------------------
 1)A modem is a device that provides access to the Internet (see below).<br>
 ![Modem](modem.png)
 
