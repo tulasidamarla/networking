@@ -1,4 +1,5 @@
-Difference between Router and Modem?
+Difference between Router and Modem(Taken from Quora)?
+
 Router
 ------
 1)A router is a small box that joins two or more networks like the internet and a local network (see below).
