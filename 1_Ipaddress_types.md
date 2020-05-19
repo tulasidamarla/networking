@@ -1,4 +1,4 @@
-#Computer networking and IP addresses
+# Computer networking and IP addresses
 
 IP
 -
@@ -34,21 +34,21 @@ IP address Classes
 - To make IP addresses feasbible for different needs, they were classified into different classes. 
 
 Class A
--------
-The total no of ipaddresses(2^32) are divided into two parts. The first part starts with 0 and second part starts with 1. The first part of ipaddresses fall under class A.
-
-So, total no of ipaddresses we can have in Class A are 2^31.
-
-In Class A 8 bits are used for NID and remaining 24 bits are for HID.
-
-All Ip addresses that belongs to Class A fall into the range of 0 to 127. 0 and 127 are not used. So, no of available networks in Class A are 126. So, we can find out the Class of an ipaddress, by just looking at first octet in the ipaddress. For ex, If an ipaddress starts with 1,2,...126 it belongs to Class A network.
-
-Note: Class A networks are generally purchased by very large enterprises like NASA, Pentagon etc.
-
-In class A, we can have 2^7 or 128 (Because first bit 0 is fixed) networks and each network can have upto 2^24 (16 million) hosts.
+-
+- Total no of IP addresses(2^32) are divided into two parts of 2^31 each.
+- The first part that starts with 0 are class A IP addresses.
+- Top most 8 bits are used for NID and remaining 24 bits are for HID.
+- As the first bit is 0(for representing Class A), IP addresses have range of 0 to 127 is the first octet.
+- Max no of networks in Class A are 126. 0 and 127 are not used.
+- Max no of ip addresses in each network are 16 million(2^24).
 
 Class B
--------
+-
+- The second part of IP addresses that start with 1 are divided into two parts.
+- The first part that starts with 10 are class B IP addresses.
+- Most significant 16 bits are used for NID and the least significant 16 bits are for HID.
+
+
 The remaining ipaddresses we have after class A are 2^31. These 2^31 ipaddresses are all have first bit 1. Now, these 31 bits are again divided into two parts. The first part starts with 0 and the second part starts with 1. So, Class B ip addresses fall under first part. That means all Class B ipaddresses start with 10.
 
 No of ipaddresses in class B are 2^30. 
