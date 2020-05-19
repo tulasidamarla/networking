@@ -1,25 +1,37 @@
-Computer networking and IP addresses
-------------------------------------
-Any computer(source host) process that interacts with another computer(desination host) process over internet needs reach the destination network, then destination host and the pid of the destination.
+#Computer networking and IP addresses
 
-For ex, if the host computer wants to interact with www.google.com from browser, then it needs to get the ip(Internet protocol) from the DNS(Domain name service) server.
+IP
+-
+- Any computer(source) process that interacts with another computer(desination) process over internet needs to reach the destination network, followed by destination computer, follwed by pid of the destination.
+- If the source wants to interact with www.google.com from browser, it needs to fetch the ip(Internet protocol) from the DNS(Domain name service) server.
+- An IP address contains two parts, NID(network id) and HID(host id). 
+  -  NID is for reaching destination network 
+  -  HID is for reaching destination host. 
+- Port number is required for interacting with destination. web servers run on 80 by default. 
 
-An IP address contains two parts named NID(network id) and HID(host id). Using NID request can reach destination network and using HID request can reach destination host. To interact with destination process, port number is required. By default, web servers run on 80. 
+DNS
+-
+- DNS server translates domain names into IP addresses. 
+- It is easier to remember names than ipaddresses. For ex, google.com, yahoo.com etc. 
+- Every internet service provider has a DNS server, which will resolve domain to an ip address.
+- When a source wants to connect to a destination, it won't contact DNS every time, because of the overhead. 
+- If a host wants to resolve a new domain dns server will be contacted and the resulting ipaddress is cached.
+- For windows to view all cached domains, execute the command from cmd prompt `ipconfig/displaydns`.
+  - Expiry time for dns entries is 86400(1 day) by default.
+- For linux, to view all cached domains, "sudo strings /var/cache/nscd/hosts".
 
- DNS server translates domain names into IP addresses. Because it is easy to remember names than ipaddresses, we use names like google.com, yahoo.com etc. Every internet service provider has a DNS server, which will resolve domain to an ip address.
- 
-Everytime when a source wants to connect to a destination, it won't contact DNS, because of the overhead. The very first time, a host wants to resolve a new domain to an ipaddress, dns server will be contacted and the resulting ipaddress is cached.
+IP address
+-
+- IP addresses are represented using 32 bit binary numbers, called dotted decimal representation. 
+- An IP adress contains 4 octets(8bits), each seperated with a dot(.). 
+- The first 8 bits are used for NID and 24 bits are used for HID.
+  - Total no of networks possible are 256(2^8). 
+  - Each network can have 16 million(2^24) hosts. 
 
-In windows to see all the domains that are cached, execute the command ipconfig/displaydns.
-In linux, it is available at /var/cache/nscd/hosts. To view the file "sudo strings /var/cache/nscd/hosts".
-
-By default windows caches these dns entries for 86400 seconds. i.e. 1 day.
-
-IP addresses are represented using 32 bit binary numbers also called dotted decimal representation. It contains 4 octets(8bits), each seperated with a dot(.). 
-
-Out of 32 bits if 8 bits are used for NID and 24 bits are used for HID, then total no of networks we have is 2^8 . That means 256 and each network can have 2^24 (16 million) hosts. This is clearly not scalable. No one can purchase such a network because no enterperise contains 16m hosts.
-
-To make the ipaddresses scalable for different needs, they were classified into different classes. 
+IP address Classes
+-
+- The above network model is not scalable. No organization can purchase/maintain such a network with 16m hosts.
+- To make IP addresses feasbible for different needs, they were classified into different classes. 
 
 Class A
 -------
