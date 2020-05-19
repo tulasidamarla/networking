@@ -36,65 +36,66 @@ IP address Classes
 Class A
 -
 - Total no of IP addresses(2^32) are divided into two parts of 2^31 each.
-- The first part that starts with 0 are class A IP addresses.
-- Top most 8 bits are used for NID and remaining 24 bits are for HID.
-- As the first bit is 0(for representing Class A), IP addresses have range of 0 to 127 is the first octet.
+- The range that starts with 0 are class A IP addresses.
+- Most significant 8 bits are used for NID and the least significant 24 bits are for HID.
+- Any IP address in the range of 0 to 127 in the first octet belongs to Class A.
 - Max no of networks in Class A are 126. 0 and 127 are not used.
 - Max no of ip addresses in each network are 16 million(2^24).
 
 Class B
 -
-- The second part of IP addresses that start with 1 are divided into two parts.
+- The second part of IP addresses that are remaining after Class A are divided into two parts.
 - The first part that starts with 10 are class B IP addresses.
+- Total no of Ip addresses in Class B are 2^30.
 - Most significant 16 bits are used for NID and the least significant 16 bits are for HID.
+- Any IP address in the range of 128 to 191 in the first octet belongs to Class B.
+- Max no of networks in Class B are 2^14(16k).
+- Max no of hosts in a Class B network are 2^16-2(64k appx).
+- The ip address range for Class B are 
 
-
-The remaining ipaddresses we have after class A are 2^31. These 2^31 ipaddresses are all have first bit 1. Now, these 31 bits are again divided into two parts. The first part starts with 0 and the second part starts with 1. So, Class B ip addresses fall under first part. That means all Class B ipaddresses start with 10.
-
-No of ipaddresses in class B are 2^30. 
-
-Class B ipaddresses use 16 bits for NID and 16 bits for HID. So, no of networks available are 2^14 or 16k. No of hosts in each network are 2^16-2 or 64000 because we don't use first and last ipaddresses.
-
-As we know, Class B addresses start with 10, the first octet of class B addresses range from 10000000 to 11000000. That means Class B, ipaddresses range from 128 to 191.
-
-Note: The total no of networks are 16k in Class B. But, we have ipaddress range from 128 to 191. It means, for each first octet there are 255 second octet values are available. That means In class B, 
-128.0.*.* <br>
-128.1.*.* <br>
-...
-128.255.*.*
-
-Similarly, for ipaddresses that start with 129,130,..191 each will networks ranging from 0 to 255.
-
-The practical users for these networks are like IRCTC, SBI etc.
+      128.0.*.* <br>
+      128.1.*.* <br>
+      ...
+      128.255.*.*
+      129.0.*.* <br>
+      129.1.*.* <br>
+      ...
+      129.255.*.*
+      ...
+      ...
+      191.0.*.* <br>
+      191.1.*.* <br>
+      ...
+      191.255.*.*
 
 Class C
--------
-After Class A and Class B, the remaining ipaddresses are available are 2^30. These ipaddress start with 11. Now, the remaining 30 bits are again divided into two parts. The first part starts with 0 and second part starts with 1. Class C uses the first part. That means Class C ipaddresses start with 110.
-
-No of ipaddresses in Class C are 2^29.
-
-Class C ipaddresses use 24 bits for NID and 8 bits for HID. Because, the first 3(110) bits are fixed, with the remaining 21 bits, we can have upto 2 million networks in Class C. Each network can have 2^8-2 or 254 hosts because we don't use first and last ipaddresses.
-
-As we know Class C starts with 110, ipaddresses range from 192 to 223.
-
-The practical users of these networks are universities, small enterprises.
+-
+- The ipaddress remained after Class A and Class B are 2^30. These bits are again divided into two ranges.
+- The ip address range that start with 110 are Class C.
+- Most significant 24 bits are for NID and the lease significant 8 bits are for HID.
+- Total no of ip addresses in Class are 2^29.
+- Total no of networks are 2^21(2 million) becuase the first 3 bits 110 are fixed.
+- Total no of hosts are 2^8-2(254)
+- Any IP address in the range of 192 to 223 in the first octet belongs to Class C. 
 
 Class D
--------
-After Class A,B and C, the remaining bits are 29. Again these are divided into two parts. The first part start with 0. These fall under Class D. so, all ipaddresses of Class D start with 1110.
+-
+- After Class A, B and C the remaining bits are 29. These ip addresses are divided into two ranges. 
+- The ip address range start with 1110 are Class D.
+- Total no of ipaddresses in Class D are 2^28.
+- Any IP address in the range of 224 to 239 in the first octet belongs to Class D. 
+- These are not divided into NID and HID.
+- These are used for multicasting and broadcasting.
 
-No of ipaddresses in Class D are 2^28.
-
-Class D ipaddress range from 224 to 239. These are not divided into NID and HID. These are not used for normal purposes. Class D addresses are used for multicasting or broadcasting.
 
 Class E
 -------
-After Class A,B,C and D, the remaining ipaddresses(2^28) available fall under Class E.
-So, all ip addresses of Class E start with 11110.
+- After Class A, B, C and D,  the remaining bits are 28.
+- The ip address range start with 1111 are Class E.
+- Total no of ipaddresses in Class D are 2^28.
+- Any IP address in the range of 240 to 255 in the first octet belongs to Class E. 
+- These are not divided into NID and HID.
+- These are used for multicasting and broadcasting.
+- These ip addresses are not used for any practical purposes.
 
-No of ipaddresses in Class E are also 2^28, because they were not divivded further.
-
-Class E ipaddress range from 240 to 255. These are not divided into NID and HID. These are not used for any practical purposes.
-
-Note: Class D is a disadvantage because there 256 millions available, even today we have less than 1000 groups who does this.
 
